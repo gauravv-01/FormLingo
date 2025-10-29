@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///D:/Practice/FormLingo/Next/styles/components/footer.module.scss"],"sourcesContent":[".footer {\r\n  background-color: #f8f9fa;\r\n  border-top: 1px solid #dee2e6;\r\n  \r\n  h5, h6 {\r\n    color: #2E7D32;\r\n  }\r\n  \r\n  .text-primary {\r\n    color: #2E7D32 !important;\r\n  }\r\n  \r\n  a {\r\n    transition: color 0.3s ease;\r\n    \r\n    &:hover {\r\n      color: #2E7D32 !important;\r\n    }\r\n  }\r\n  \r\n  i {\r\n    transition: transform 0.3s ease;\r\n    \r\n    &:hover {\r\n      transform: scale(1.2);\r\n    }\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;;AAIE;;;;AAIA;;;;AAIA;;;;AAGE;;;;AAKF;;;;AAGE"}}]
+}

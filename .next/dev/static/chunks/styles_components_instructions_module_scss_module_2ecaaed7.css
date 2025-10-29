@@ -1,0 +1,104 @@
+/* [project]/styles/components/instructions.module.scss.module.css [app-client] (css) */
+.instructions-module-scss-module__XQDJfa__card {
+  border: none;
+  border-radius: 1rem;
+  transition: all .3s;
+  box-shadow: 0 .125rem .25rem #00000013;
+}
+
+.instructions-module-scss-module__XQDJfa__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 .5rem 1rem #00000026;
+}
+
+.instructions-module-scss-module__XQDJfa__alert {
+  border: none;
+  border-radius: .75rem;
+  font-weight: 500;
+}
+
+.instructions-module-scss-module__XQDJfa__alert.instructions-module-scss-module__XQDJfa__alert-info {
+  color: #1565c0;
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+}
+
+.instructions-module-scss-module__XQDJfa__alert.instructions-module-scss-module__XQDJfa__alert-success {
+  color: #2e7d32;
+  background-color: #e8f5e8;
+  border-left: 4px solid #4caf50;
+}
+
+.instructions-module-scss-module__XQDJfa__alert.instructions-module-scss-module__XQDJfa__alert-warning {
+  color: #ef6c00;
+  background-color: #fff3e0;
+  border-left: 4px solid #ff9800;
+}
+
+.instructions-module-scss-module__XQDJfa__alert.instructions-module-scss-module__XQDJfa__alert-primary {
+  color: #1565c0;
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196f3;
+}
+
+.instructions-module-scss-module__XQDJfa__step-number {
+  color: #fff;
+  background-color: #2e7d32;
+  border-radius: 50%;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: flex;
+}
+
+.instructions-module-scss-module__XQDJfa__creator-avatar {
+  color: #fff;
+  background-color: #2e7d32;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  font-size: 3rem;
+  display: flex;
+}
+
+.instructions-module-scss-module__XQDJfa__list-unstyled li {
+  border-bottom: 1px solid #f0f0f0;
+  padding: .5rem 0;
+}
+
+.instructions-module-scss-module__XQDJfa__list-unstyled li:last-child {
+  border-bottom: none;
+}
+
+.instructions-module-scss-module__XQDJfa__list-unstyled li i {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .instructions-module-scss-module__XQDJfa__step-number {
+    width: 40px;
+    height: 40px;
+    margin-right: .75rem;
+    font-size: 1rem;
+  }
+
+  .instructions-module-scss-module__XQDJfa__creator-avatar {
+    width: 80px;
+    height: 80px;
+    font-size: 2.5rem;
+  }
+
+  .instructions-module-scss-module__XQDJfa__card-body {
+    padding: 1.5rem !important;
+  }
+}
+
+/*# sourceMappingURL=styles_components_instructions_module_scss_module_2ecaaed7.css.map*/

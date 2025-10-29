@@ -1,0 +1,31 @@
+/* [project]/styles/components/footer.module.scss.module.css [app-client] (css) */
+.footer-module-scss-module__kn8Q8W__footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+.footer-module-scss-module__kn8Q8W__footer h5, .footer-module-scss-module__kn8Q8W__footer h6 {
+  color: #2e7d32;
+}
+
+.footer-module-scss-module__kn8Q8W__footer .footer-module-scss-module__kn8Q8W__text-primary {
+  color: #2e7d32 !important;
+}
+
+.footer-module-scss-module__kn8Q8W__footer a {
+  transition: color .3s;
+}
+
+.footer-module-scss-module__kn8Q8W__footer a:hover {
+  color: #2e7d32 !important;
+}
+
+.footer-module-scss-module__kn8Q8W__footer i {
+  transition: transform .3s;
+}
+
+.footer-module-scss-module__kn8Q8W__footer i:hover {
+  transform: scale(1.2);
+}
+
+/*# sourceMappingURL=styles_components_footer_module_scss_module_css_bad6b30c._.single.css.map*/

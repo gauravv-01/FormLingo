@@ -1,0 +1,100 @@
+.textarea {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  resize: vertical;
+  min-height: 200px;
+  
+  &:focus {
+    border-color: #2E7D32;
+    box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+  }
+}
+
+.btn-success {
+  background-color: #2E7D32;
+  border-color: #2E7D32;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  
+  &:hover {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(46, 125, 50, 0.3);
+  }
+  
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.btn-outline-secondary {
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.3s ease;
+  
+  &:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+}
+
+.alert {
+  border: none;
+  border-radius: 0.75rem;
+  font-weight: 500;
+}
+
+.form-control {
+  border-radius: 0.75rem;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  
+  &:focus {
+    border-color: #2E7D32;
+    box-shadow: 0 0 0 0.2rem rgba(46, 125, 50, 0.25);
+  }
+}
+
+// Process steps styling
+.process-step {
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  .btn-lg {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .textarea {
+    min-height: 150px;
+    font-size: 0.85rem;
+  }
+}

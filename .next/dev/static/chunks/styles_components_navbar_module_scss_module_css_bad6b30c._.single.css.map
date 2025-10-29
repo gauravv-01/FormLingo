@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///D:/Practice/FormLingo/Next/styles/components/navbar.module.scss"],"sourcesContent":[".navbar {\r\n  padding: 1rem 0;\r\n  \r\n  .navbar-brand {\r\n    font-size: 1.5rem;\r\n    color: #2E7D32 !important;\r\n  }\r\n  \r\n  .nav-link {\r\n    font-weight: 500;\r\n    color: #6c757d !important;\r\n    margin: 0 0.5rem;\r\n    transition: color 0.3s ease;\r\n    \r\n    &:hover {\r\n      color: #2E7D32 !important;\r\n    }\r\n  }\r\n}\r\n"],"names":[],"mappings":"AAAA;;;;AAGE;;;;;AAKA;;;;;;;AAME"}}]
+}

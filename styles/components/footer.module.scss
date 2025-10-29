@@ -1,0 +1,28 @@
+.footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  
+  h5, h6 {
+    color: #2E7D32;
+  }
+  
+  .text-primary {
+    color: #2E7D32 !important;
+  }
+  
+  a {
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: #2E7D32 !important;
+    }
+  }
+  
+  i {
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

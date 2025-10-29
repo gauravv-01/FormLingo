@@ -1,0 +1,22 @@
+/* [project]/styles/components/navbar.module.scss.module.css [app-client] (css) */
+.navbar-module-scss-module__VL36Kq__navbar {
+  padding: 1rem 0;
+}
+
+.navbar-module-scss-module__VL36Kq__navbar .navbar-module-scss-module__VL36Kq__navbar-brand {
+  font-size: 1.5rem;
+  color: #2e7d32 !important;
+}
+
+.navbar-module-scss-module__VL36Kq__navbar .navbar-module-scss-module__VL36Kq__nav-link {
+  margin: 0 .5rem;
+  font-weight: 500;
+  transition: color .3s;
+  color: #6c757d !important;
+}
+
+.navbar-module-scss-module__VL36Kq__navbar .navbar-module-scss-module__VL36Kq__nav-link:hover {
+  color: #2e7d32 !important;
+}
+
+/*# sourceMappingURL=styles_components_navbar_module_scss_module_css_bad6b30c._.single.css.map*/
