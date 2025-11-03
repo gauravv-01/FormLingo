@@ -12,6 +12,7 @@ export const metadata = {
   description: 'Smart automation tool to simplify SAP ABAP Adobe Forms translation process. Extract XML, translate, and generate output with just a few clicks.',
   keywords: 'SAP, ABAP, Adobe Forms, translation, automation, SE63, XML',
   author: 'Gaurav Kumawat',
+  
 }
 
 export const viewport = {
@@ -23,7 +24,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="/img/icon.png" type="image/png" sizes="32x32" /> */}
+        <link rel="icon" href="/img/icon5.png" type="image/png" sizes="32x32" />
+
       </head>
       <body className={inter.className}>
         <div className="d-flex flex-column min-vh-100">

@@ -1,6 +1,7 @@
 'use client'
 
 import styles from '../../styles/components/instructions.module.scss'
+import Image from 'next/image'
 
 export default function InstructionsPage() {
   return (
@@ -22,7 +23,7 @@ export default function InstructionsPage() {
               <div className="card h-100 shadow-sm">
                 <div className="card-body p-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '50px', height: '50px'}}>
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: '50px', height: '50px' }}>
                       <span className="fw-bold fs-5">1</span>
                     </div>
                     <h4 className="mb-0">Extract XML from SAP</h4>
@@ -54,13 +55,13 @@ export default function InstructionsPage() {
               <div className="card h-100 shadow-sm">
                 <div className="card-body p-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '50px', height: '50px'}}>
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: '50px', height: '50px' }}>
                       <span className="fw-bold fs-5">2</span>
                     </div>
                     <h4 className="mb-0">Paste & Download Excel</h4>
                   </div>
                   <p className="text-muted">
-                    Paste the XML string into FormLingo's text area and click "Download Excel". 
+                    Paste the XML string into FormLingo's text area and click "Download Excel".
                     The tool will automatically extract all text elements and generate a structured Excel file.
                   </p>
                   <div className="alert alert-success">
@@ -75,13 +76,13 @@ export default function InstructionsPage() {
               <div className="card h-100 shadow-sm">
                 <div className="card-body p-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '50px', height: '50px'}}>
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: '50px', height: '50px' }}>
                       <span className="fw-bold fs-5">3</span>
                     </div>
                     <h4 className="mb-0">Translate in Excel</h4>
                   </div>
                   <p className="text-muted">
-                    Open the downloaded Excel file and add your translations in the designated columns. 
+                    Open the downloaded Excel file and add your translations in the designated columns.
                     You can work with translators or translate yourself - the format is clear and organized.
                   </p>
                   <div className="alert alert-warning">
@@ -96,13 +97,13 @@ export default function InstructionsPage() {
               <div className="card h-100 shadow-sm">
                 <div className="card-body p-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '50px', height: '50px'}}>
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: '50px', height: '50px' }}>
                       <span className="fw-bold fs-5">4</span>
                     </div>
                     <h4 className="mb-0">Upload & Get Final XML</h4>
                   </div>
                   <p className="text-muted">
-                    Upload the translated Excel file back to FormLingo, paste your original XML, 
+                    Upload the translated Excel file back to FormLingo, paste your original XML,
                     and click "Translate". Get your final translated XML ready to use in SAP.
                   </p>
                   <div className="alert alert-success">
@@ -120,7 +121,7 @@ export default function InstructionsPage() {
               <div className="card h-100 shadow-sm">
                 <div className="card-body p-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '50px', height: '50px'}}>
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: '50px', height: '50px' }}>
                       <span className="fw-bold fs-5">5</span>
                     </div>
                     <h4 className="mb-0">Paste XML back to SE63</h4>
@@ -136,12 +137,12 @@ export default function InstructionsPage() {
                 </div>
               </div>
             </div>
-            
+
             <div className="col-md-6">
               <div className="card h-100 shadow-sm">
                 <div className="card-body p-4">
                   <div className="d-flex align-items-center mb-3">
-                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '50px', height: '50px'}}>
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{ width: '50px', height: '50px' }}>
                       <span className="fw-bold fs-5">6</span>
                     </div>
                     <h4 className="mb-0">Final Step (Optional)</h4>
@@ -164,7 +165,7 @@ export default function InstructionsPage() {
                 FormLingo is a smart automation tool built to simplify the SAP ABAP Adobe Forms translation process.
               </p>
               <p className="mb-4">
-                In the traditional method using SE63, developers spend hours manually extracting each text element, 
+                In the traditional method using SE63, developers spend hours manually extracting each text element,
                 preparing Excel sheets, and pasting translations back one by one — a time-consuming and error-prone task.
               </p>
               <p className="mb-4">
@@ -194,7 +195,7 @@ export default function InstructionsPage() {
                   No more manual work!
                 </h5>
                 <p className="mb-0">
-                  No more manual copy-paste, no more hunting down individual text nodes. 
+                  No more manual copy-paste, no more hunting down individual text nodes.
                   Just automation, accuracy, and efficiency.
                 </p>
               </div>
@@ -205,23 +206,47 @@ export default function InstructionsPage() {
           <div className="card shadow-sm">
             <div className="card-body p-5">
               <div className="row align-items-center">
-                <div className="col-md-3 text-center mb-3 mb-md-0">
+                {/* <div className="col-md-3 text-center mb-3 mb-md-0">
                   <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center mx-auto" style={{width: '100px', height: '100px'}}>
                     <i className="bi bi-person-fill fs-1"></i>
                   </div>
+                </div> */}
+                {/* Author Image */}
+                {/* <div className="col-md-3 text-center mb-3 mb-md-0">
+                  <Image
+                    src="/img/Author.jpeg" // ✅ make sure this file exists in /public/img/
+                    alt="Author - Gaurav Kumawat"
+                    width={100}
+                    height={100}
+                    className="rounded-circle border border-primary p-1 shadow-sm mx-auto"
+                    priority
+                  />
+                </div> */}
+
+                <div className="position-relative mx-auto rounded-circle overflow-hidden" style={{ width: '150px', height: '150px', maxWidth: '40vw' }}>
+                  <Image
+                    src="/img/Author.jpeg"
+                    alt="Author - Gaurav Kumawat"
+                    fill
+                    className="rounded-circle border border-primary p-1 shadow-sm object-fit-cover"
+                    sizes="(max-width: 768px) 100px, (max-width: 1200px) 150px, 180px"
+                    priority
+                  />
                 </div>
+
+
                 <div className="col-md-9">
                   <h3 className="text-primary mb-3">About the Creator</h3>
                   <p className="mb-3">
                     I'm <strong>Gaurav Kumawat</strong>, an Associate Software Engineer at Accenture.
                   </p>
                   <p className="mb-3">
-                    While working on SAP ABAP Adobe Form translations, I realized how much repetitive manual effort 
-                    was involved in using SE63. To solve this challenge, I built FormLingo — a simple yet powerful 
+                    While working on SAP ABAP Adobe Form translations, I realized how much repetitive manual effort
+                    was involved in using SE63. To solve this challenge, I built FormLingo — a simple yet powerful
                     web tool to automate the translation workflow for developers like me.
                   </p>
                   <p className="mb-0">
-                    This project reflects my passion for optimizing SAP processes and creating developer-friendly 
+                    This project reflects my passion for optimizing SAP processes and creating developer-friendly
                     automation tools that make everyday tasks faster and smarter.
                   </p>
                 </div>
@@ -230,7 +255,7 @@ export default function InstructionsPage() {
           </div>
         </div>
       </div>
-      
+
     </div>
   )
 }

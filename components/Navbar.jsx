@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import styles from '../styles/components/navbar.module.scss'
 
@@ -19,7 +20,7 @@ export default function Navbar() {
         <Link className="navbar-brand fw-bold text-primary" href="/">
           FormLingo
         </Link>
-        
+
         <button 
           className="navbar-toggler" 
           type="button" 
