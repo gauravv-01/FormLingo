@@ -10,6 +10,7 @@ export default function TranslatePage() {
   const [isLoading, setIsLoading] = useState(false)
   const [alert, setAlert] = useState({ show: false, message: '', type: '' })
   const fileInputRef = useRef(null)
+  const outputTextAreaRef = useRef(null)
 
   const showAlert = (message, type) => {
     setAlert({ show: true, message, type })
@@ -70,7 +71,25 @@ export default function TranslatePage() {
     }
 
     try {
-      await navigator.clipboard.writeText(outputXml)
+      if (navigator.clipboard && window.isSecureContext) {
+        await navigator.clipboard.writeText(outputXml)
+      } else {
+        // Fallback for insecure contexts or older browsers
+        const el = outputTextAreaRef.current
+        if (el) {
+          const prevReadOnly = el.readOnly
+          el.readOnly = false
+          el.focus()
+          el.select()
+          const ok = document.execCommand('copy')
+          el.setSelectionRange(0, 0)
+          el.blur()
+          el.readOnly = prevReadOnly
+          if (!ok) throw new Error('execCommand copy failed')
+        } else {
+          throw new Error('No textarea to copy from')
+        }
+      }
       showAlert('Copied to clipboard!', 'success')
     } catch (error) {
       console.error('Error copying to clipboard:', error)
@@ -157,6 +176,7 @@ export default function TranslatePage() {
                     placeholder="Translated XML will appear here..."
                     value={outputXml}
                     readOnly
+                    ref={outputTextAreaRef}
                   />
                 </div>
               </div>
@@ -166,6 +186,7 @@ export default function TranslatePage() {
                 <div className="col-12">
                   <div className="d-flex gap-3 flex-wrap">
                     <button
+                      type="button"
                       className="btn btn-success btn-lg"
                       onClick={handleTranslate}
                       disabled={isLoading}
@@ -184,6 +205,7 @@ export default function TranslatePage() {
                     </button>
                     
                     <button
+                      type="button"
                       className="btn btn-outline-secondary btn-lg"
                       onClick={handleCopyToClipboard}
                       disabled={!outputXml.trim()}

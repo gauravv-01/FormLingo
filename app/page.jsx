@@ -72,7 +72,7 @@ export default function Home() {
               Extract Text from XML STRING
             </h1>
             <p className="lead text-muted">
-              Please paste the source XML tag string copied from your form SE63 Translation. 
+              Please paste the source XML tag string copied from SE63 Transaction. 
               <br />
               <small className="text-muted">
                 (For more details, please refer to the <a href="/instructions" className="text-primary text-decoration-none">INSTRUCTIONS</a>.)
@@ -95,7 +95,7 @@ export default function Home() {
                   onChange={(e) => setXmlString(e.target.value)}
                 />
                 <div className="form-text">
-                  Paste the complete XML string from your SAP Adobe Form SE63 translation
+                  Paste the complete XML string of your SAP Adobe Form from SE63 transaction
                 </div>
               </div>
 

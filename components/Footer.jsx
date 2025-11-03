@@ -27,13 +27,13 @@ export default function Footer() {
           <div className="col-md-4">
             <h6 className="fw-bold">Connect</h6>
             <div className="d-flex gap-3">
-              <a href="https://linkedin.com/in/gaurav-kumawat" target="_blank" rel="noopener noreferrer" className="text-muted">
+              <a href="https://www.linkedin.com/in/gaurav-kumawat-691162239?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" className="text-muted">
                 <i className="bi bi-linkedin fs-5"></i>
               </a>
-              <a href="https://github.com/gaurav-kumawat" target="_blank" rel="noopener noreferrer" className="text-muted">
+              <a href="https://github.com/gauravv-01" target="_blank" rel="noopener noreferrer" className="text-muted">
                 <i className="bi bi-github fs-5"></i>
               </a>
-              <a href="https://youtube.com/@gaurav-kumawat" target="_blank" rel="noopener noreferrer" className="text-muted">
+              <a href="https://youtube.com/@gaurav.kumawat" target="_blank" rel="noopener noreferrer" className="text-muted">
                 <i className="bi bi-youtube fs-5"></i>
               </a>
             </div>
@@ -45,7 +45,7 @@ export default function Footer() {
         <div className="row align-items-center">
           <div className="col-md-6">
             <p className="text-muted small mb-0">
-              © 2024 FormLingo. Created by Gaurav Kumawat, Associate Software Engineer at Accenture.
+              © 2025 FormLingo. Created by Gaurav Kumawat, Associate Software Engineer at Accenture.
             </p>
           </div>
           <div className="col-md-6 text-md-end">

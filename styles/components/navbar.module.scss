@@ -15,5 +15,10 @@
     &:hover {
       color: #2E7D32 !important;
     }
+
+    &.active {
+      color: #2E7D32 !important;
+      font-weight: 700;
+    }
   }
 }

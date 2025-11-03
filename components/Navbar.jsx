@@ -1,9 +1,18 @@
 'use client'
 
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import styles from '../styles/components/navbar.module.scss'
 
 export default function Navbar() {
+  const pathname = usePathname() || '/'
+
+  const navItems = [
+    { href: '/', label: 'Extract' },
+    { href: '/translate', label: 'Translate' },
+    { href: '/instructions', label: 'Instructions' },
+  ]
+
   return (
     <nav className={`navbar navbar-expand-lg navbar-light bg-white sticky-top ${styles.navbar}`}>
       <div className="container">
@@ -25,21 +34,21 @@ export default function Navbar() {
         
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" href="/">
-                Extract
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/translate">
-                Translate
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="nav-link" href="/instructions">
-                Instructions
-              </Link>
-            </li>
+            {navItems.map(({ href, label }) => {
+              const isActive = pathname === href
+              return (
+                <li className="nav-item" key={href}>
+                  <Link
+                    href={href}
+                    className={`nav-link ${isActive ? 'active fw-semibold text-primary' : ''}`}
+                    aria-current={isActive ? 'page' : undefined}
+                    prefetch
+                  >
+                    {label}
+                  </Link>
+                </li>
+              )
+            })}
           </ul>
         </div>
       </div>

@@ -27,13 +27,24 @@ export default function InstructionsPage() {
                     </div>
                     <h4 className="mb-0">Extract XML from SAP</h4>
                   </div>
-                  <p className="text-muted">
-                    In your SAP system, go to SE63 (Translation) and copy the complete XML string from your Adobe Form. 
-                    This XML contains all the text elements that need translation.
-                  </p>
-                  <div className="alert alert-info">
-                    <i className="bi bi-info-circle me-2"></i>
-                    <strong>Tip:</strong> Make sure to copy the entire XML structure, not just parts of it.
+                  <div className="text-muted">
+                    <ul className="list-group list-group-flush">
+                      <li className="list-group-item px-0">
+                        Go to <strong>Transaction SE63</strong> (Translation Editor).
+                      </li>
+                      <li className="list-group-item px-0">
+                        Select <strong>Other Text → Q5 PDF-Based Forms</strong> → Double-click <strong>PDFB PDF-Based Forms</strong>.
+                      </li>
+                      <li className="list-group-item px-0">
+                        Enter your form name, select <strong>Source Language</strong> and <strong>Target Language</strong>, then click <strong>Edit</strong>.
+                      </li>
+                      <li className="list-group-item px-0">
+                        At the top (near the <em>Check & Activate</em> button), click <strong>Expand Tags</strong> (<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>F3</kbd>).
+                      </li>
+                      <li className="list-group-item px-0">
+                        Copy the <strong>XML content</strong> from the <strong>Source Text</strong> section.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -98,6 +109,48 @@ export default function InstructionsPage() {
                     <i className="bi bi-check-circle me-2"></i>
                     <strong>Done!</strong> Copy the final XML and paste it back into SE63.
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Steps 5 & 6 */}
+          <div className="row g-4 mb-5">
+            <div className="col-md-6">
+              <div className="card h-100 shadow-sm">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '50px', height: '50px'}}>
+                      <span className="fw-bold fs-5">5</span>
+                    </div>
+                    <h4 className="mb-0">Paste XML back to SE63</h4>
+                  </div>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item px-0">Go again to <strong>Transaction SE63</strong> (Translation Editor).</li>
+                    <li className="list-group-item px-0">Select <strong>Other Text → Q5 PDF-Based Forms → PDFB PDF-Based Forms</strong>.</li>
+                    <li className="list-group-item px-0">Enter your form name, select <strong>Source & Target Language</strong>, then click <strong>Edit</strong>.</li>
+                    <li className="list-group-item px-0">In the <strong>Target Text</strong> section, delete any previous text.</li>
+                    <li className="list-group-item px-0">Paste your <strong>translated XML</strong> string into the Target Text area.</li>
+                    <li className="list-group-item px-0">Click <strong>Save</strong> and <strong>Activate</strong>.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-6">
+              <div className="card h-100 shadow-sm">
+                <div className="card-body p-4">
+                  <div className="d-flex align-items-center mb-3">
+                    <div className="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '50px', height: '50px'}}>
+                      <span className="fw-bold fs-5">6</span>
+                    </div>
+                    <h4 className="mb-0">Final Step (Optional)</h4>
+                  </div>
+                  <ul className="list-group list-group-flush">
+                    <li className="list-group-item px-0">Open your form in <strong>Transaction SFP</strong> in <strong>Change Mode</strong>.</li>
+                    <li className="list-group-item px-0">Go to the <strong>Layout</strong> section.</li>
+                    <li className="list-group-item px-0">Click <strong>Save</strong> and <strong>Activate</strong> the form to ensure the changes are reflected.</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -177,6 +230,7 @@ export default function InstructionsPage() {
           </div>
         </div>
       </div>
+      
     </div>
   )
 }
